@@ -25,9 +25,9 @@ namespace prova_3.Classes
             string tipo,
 
             // Medico
-            string? crm,
+            string crm,
             double valorHoraExtra,
-            string? especialidade
+            string especialidade
         )
         {
             try
