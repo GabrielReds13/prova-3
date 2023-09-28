@@ -9,9 +9,9 @@ namespace prova_3.Classes
     public static class Sistema
     {
         // Atributo
-        public static List<Medico> Medicos { get; set; }
-        public static List<Adiministrativo> Adiministrativos { get; set; }
-        public static List<Funcionario> Funcionarios { get; set; }
+        public static List<Medico> Medicos = new List<Medico>();
+        public static List<Adiministrativo> Adiministrativos = new List<Adiministrativo>();
+        public static List<Funcionario> Funcionarios = new List<Funcionario>();
 
         // Metodos
         public static void CadastrarFuncionario
@@ -37,7 +37,7 @@ namespace prova_3.Classes
                 int matricula = n.Next(100000, 999999);
 
                 // Criar funcionario
-                if(tipo == null)
+                if(tipo == "")
                 {
                     Funcionario f = new Funcionario
                     (
